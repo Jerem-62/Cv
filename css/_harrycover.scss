@@ -520,6 +520,7 @@ header {
 
   .row > div {
     display: flex;
+
     padding-left: .75rem;
     padding-right: .75rem;
   }
@@ -818,6 +819,7 @@ footer {
       flex-direction: column;
       align-items: stretch;
       text-align: center;
+
 
       .percent {
         margin: 0 auto;
