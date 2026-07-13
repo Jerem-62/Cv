@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://tonnom.github.io/cv-jeremy-delahaye/</loc>
-      <lastmod>2026-06-29</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-   </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://jerem-62.github.io/cv/</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://jerem-62.github.io/cv/photo-profil.jpg</image:loc>
+            <image:title>Jeremy Delahaye - Technicien Support N2</image:title>
+        </image:image>
+    </url>
+
 </urlset>

@@ -1,3 +1,24 @@
+# robots.txt - Portfolio Jeremy Delahaye
+# https://jerem-62.github.io/cv/
+
 User-agent: *
 Allow: /
-Sitemap: https://tonnom.github.io/cv-jeremy-delahaye/sitemap.xml
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /cgi-bin/
+
+# Protection contre les bots d'IA (optionnel)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Sitemap
+Sitemap: https://jerem-62.github.io/cv/sitemap.xml
