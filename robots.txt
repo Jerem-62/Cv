@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tonnom.github.io/cv-jeremy-delahaye/sitemap.xml
