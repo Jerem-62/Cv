@@ -2,18 +2,67 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message envoyé | Jeremy Delahaye</title>
     <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="refresh" content="5;url=index.html">
+    <style>
+        .merci-container {
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .merci-container h1 {
+            color: var(--success, #27ae60);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .merci-container p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: var(--text, #333);
+        }
+        .countdown {
+            font-weight: 700;
+            color: var(--accent, #3498db);
+            font-size: 1.4rem;
+        }
+        .merci-container .contact-btn {
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <section style="text-align:center; padding:4rem 2rem;">
-        <h1 style="color:#27ae60;">✅ Merci !</h1>
-        <p style="font-size:1.2rem; margin:1rem 0;">
+    <section class="merci-container">
+        <h1>✅ Merci !</h1>
+        <p>
             Votre message a bien été envoyé.<br>
             Je vous répondrai dans les plus brefs délais.
         </p>
+        <p>
+            Redirection dans <span class="countdown" id="countdown">10</span> secondes...
+        </p>
         <a href="index.html" class="contact-btn">← Retour à l'accueil</a>
     </section>
+
+    <script>
+        let seconds = 10;
+        const countdownEl = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
